@@ -68,13 +68,12 @@ nav h1 a {
   text-transform: uppercase;
 }
 #breadcrumb {
-    padding: 10px 40px 16px;
+    padding: 10px 20px 16px;
     list-style: none;
     background-color: #eee;
     font-size: 17px;
     margin: 0;
     width: 100%;
-    /*width: calc(50% - 80px);*/
 }
 
 /* Display list items side by side */
@@ -93,6 +92,7 @@ nav h1 a {
 #breadcrumb li a {
     color: #0275d8;
     text-decoration: none;
+    padding: 1.25em 0.55em;
 }
 
 /* Add a color on mouse-over */
@@ -202,9 +202,9 @@ nav h1 a {
   background: blue none repeat scroll 0 0;
   position: fixed;
   right: 0;
-  top: 80px;
+  top: 131px;
   width: 100%;
-  height: 15rem;
+  height: 13rem;
   z-index: 10;
 }
 .inside #map {
@@ -221,7 +221,7 @@ nav h1 a {
   font-size: 20pt;
   font-weight: 200;
   letter-spacing: 0;
-  margin: 15px 0 30px;
+  margin: 15px 0;
   text-transform: uppercase;
   line-height: 1.1;
 }
@@ -245,7 +245,7 @@ nav h1 a {
 	width: 100%;
 }
 #restaurant-container{
-  margin-top: 11rem;
+  margin-top: 12.5rem;
 }
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
@@ -366,6 +366,7 @@ nav h1 a {
   .inside #map-container{
     width: 50%;
     height: 100%;
+    top: 80px;
   }
   #restaurant-container, #reviews-container{
     width: 50%;
@@ -390,7 +391,7 @@ nav h1 a {
     width: 100%;
   }
   #breadcrumb{
-    width: calc(50% - 80px);
+    width: calc(50% - 40px);
   }
 }
 
