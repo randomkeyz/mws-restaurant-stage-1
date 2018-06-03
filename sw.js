@@ -1,6 +1,6 @@
 self.addEventListener('install', function(event){	
 	event.waitUntil(
-		caches.open('restaurant-v3').then(function(cache){
+		caches.open('restaurant-v5').then(function(cache){
 			return cache.addAll([
 				'/',
 				'restaurant.html',
@@ -37,10 +37,11 @@ self.addEventListener('install', function(event){
 
 self.addEventListener('fetch', function(event){
 	event.respondWith(
-		caches.match(event.request).then(function(response){
+		caches.match(event.request, {'ignoreSearch': true}).then(function(response){
 			if(response) return response;
 			return fetch(event.request);
 		}).catch(function(error){
+			console.log(event.request);
 			console.log('Error: ' + error)
 		})
 	);

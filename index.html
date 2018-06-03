@@ -16,10 +16,11 @@
   </header>
 
   <main id="maincontent">
+    <a href="#main-content" class="skip-link">Skip to restaurant selection</a>
     <section id="map-container">
       <div id="map"></div>
     </section>
-    <section>
+    <section id="main-content">
       <div class="filter-options">
         <div class="filter-wrapper">
           <h2>Filter Results</h2>
@@ -34,7 +35,6 @@
       <ul id="restaurants-list"></ul>
     </section>
   </main>
-
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=initMap"></script>

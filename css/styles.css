@@ -25,6 +25,10 @@ a:hover, a:focus {
 	color: #3397db;
 	text-decoration: none;
 }
+a:focus{
+  outline: 2px solid orange;
+  box-shadow: 0 0 8px 3px rgba(255, 165, 0, 0.8);
+}
 a img{
 	border: none 0px #fff;
 }
@@ -34,6 +38,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
+}
+.skip-link{
+  position: absolute;
+  z-index: 100;
+  top: -40px;
+  left: 0;
+  padding: 15px 10px;
+}
+.skip-link:focus{
+  top: 0;
 }
 #maincontent {
   background-color: #f3f3f3;
@@ -48,6 +62,9 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-align: center;
   text-transform: uppercase;
   box-sizing: border-box;
+}
+#footer a{
+  padding: 18px 5px;
 }
 /* ====================== Navigation ====================== */
 nav {
@@ -66,9 +83,11 @@ nav h1 a {
   font-weight: 200;
   letter-spacing: 10px;
   text-transform: uppercase;
+  padding: 13px 10px;
 }
+
 #breadcrumb {
-    padding: 10px 20px 16px;
+    padding: 12px 20px 16px;
     list-style: none;
     background-color: #eee;
     font-size: 17px;
@@ -132,6 +151,10 @@ nav h1 a {
   padding: 0 10px;
   width: 43%
 }
+.filter-options select:focus {
+  outline: 2px solid orange;
+  box-shadow: 0 0 8px 3px rgba(255, 165, 0, 0.8);
+}
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
@@ -189,6 +212,10 @@ nav h1 a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+#restaurants-list li a:focus {
+  outline: 2px solid #3397db;
+  box-shadow: 0 0 8px 3px rgba(51, 151, 219, 0.8);
 }
 
 /* ====================== Restaurant Details ====================== */
