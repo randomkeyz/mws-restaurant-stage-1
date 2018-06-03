@@ -8,42 +8,7 @@ var webp = require('gulp-webp');
 gulp.task('clean:img', function(){
   return del.sync('img');
 });
-/*
-gulp.task('resize-sm', function () {
-  gulp.src('src/img/** /*.jpg')
-    .pipe(imageResize({
-      width : 225,
-      crop : false,
-      upscale : true
-    }))
-    .pipe(rename(function(path){
-      path.basename += '_sm';
-    }))
-    .pipe(gulp.dest('img'));
-    });
-*/
-/*
-gulp.task('webp', () =>
-  gulp.src('img/** /*.jpg')
-    .pipe(webp({lossless: true}))
-    .pipe(gulp.dest('img'))
-);
-*/
 
-/*
-gulp.task('images', function () {
-  gulp.src('src/img/** /*.jpg')
-    .pipe(imageResize({
-      width : 270,
-      crop : false,
-      upscale : true
-    }))
-    .pipe(rename(function(path){
-      path.basename;
-    }))
-    .pipe(gulp.dest('img'));
-});
-*/
 gulp.task('images-md', function () {
   gulp.src('src/img/**/*.jpg')
     .pipe(imageResize({
