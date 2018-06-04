@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,13 +13,15 @@
   <!-- Beginning header -->
   <header>
     <!-- Beginning nav -->
-    <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
-    </nav>
+      <nav>
+        <h1><a href="/">Restaurant Reviews</a></h1>
+      </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" >
-      <li><a href="/">Home</a></li>
-    </ul>
+    <nav id="bc-nav" aria-label="Breadcrumb">
+      <ol id="breadcrumb">
+        <li><a href="/">Home</a></li>
+      </ol>
+    </nav>
     <!-- End breadcrumb -->
     <!-- End nav -->
     <a href="#restaurant-container" class="skip-link">Skip to restaurant info</a>
@@ -30,12 +32,12 @@
   <main id="maincontent">
     <!-- Beginning map -->
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" role="application" aria-label="Location of resturant on Google Map"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
     <section id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
+      <h2 id="restaurant-name"></h2>
       <div class="restaurant-info">
         <div class="restaurant-overview">
           <img id="restaurant-img">

@@ -85,6 +85,12 @@ nav h1 a {
   text-transform: uppercase;
   padding: 13px 10px;
 }
+#bc-nav{
+    width: initial;
+    height: initial;
+    background: none;
+    text-align: left;
+}
 
 #breadcrumb {
     padding: 12px 20px 16px;
@@ -187,7 +193,7 @@ nav h1 a {
   max-width: 100%;
   width: 100%;
 }
-#restaurants-list li h1 {
+#restaurants-list li h2 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 14pt;
